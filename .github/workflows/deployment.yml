@@ -25,6 +25,8 @@ jobs:
       - name: Run tests
         run: npm test
   deploy:
+
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
@@ -44,6 +46,6 @@ jobs:
 
       - name: Deploy
         run: echo "Simulated deployment complete ....."
-        
+
       - name: Cleanup
         run: echo "Cleaning up runner workspace..."
