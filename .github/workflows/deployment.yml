@@ -3,11 +3,11 @@ name: Deploy Project
 on:
   push:
     branches:
-      - main
+      - master
 
   pull_request:
     types: [opened]
-    branches: [main]
+    branches: [master]
 
   workflow_dispatch:
 
