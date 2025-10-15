@@ -44,3 +44,6 @@ jobs:
 
       - name: Deploy
         run: echo "Simulated deployment complete ....."
+        
+      - name: Cleanup
+        run: echo "Cleaning up runner workspace..."
